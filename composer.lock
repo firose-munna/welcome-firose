@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a751fdadce06bf32e23bd53515ca93ba",
+    "content-hash": "b7ecd4ebcc8980b8721a6d5d5465054a",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -813,6 +813,37 @@
                 "source": "https://github.com/firebase/php-jwt/tree/v6.11.1"
             },
             "time": "2025-04-09T20:32:01+00:00"
+        },
+        {
+            "name": "firose/welcome",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/welcome",
+                "reference": "b35a1eaeaa3066742170c6572aa6bab074d646d5"
+            },
+            "require": {
+                "typo3/cms-core": "^13.4",
+                "typo3/cms-fluid-styled-content": "^13.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "welcome"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Firose\\Welcome\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Welcome site package for TYPO3",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -7030,7 +7061,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "firose/welcome": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},

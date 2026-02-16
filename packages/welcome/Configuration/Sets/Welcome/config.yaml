@@ -1,0 +1,4 @@
+name: firose/welcome
+label: 'Welcome Site Package'
+dependencies:
+  - typo3/fluid-styled-content

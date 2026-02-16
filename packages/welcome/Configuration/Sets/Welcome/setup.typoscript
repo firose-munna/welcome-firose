@@ -1,0 +1,16 @@
+page = PAGE
+page.typeNum = 0
+
+page.10 = FLUIDTEMPLATE
+page.10 {
+    templateName = Default
+    templateRootPaths.10 = EXT:welcome/Resources/Private/Templates/Page/
+    layoutRootPaths.10 = EXT:welcome/Resources/Private/Layouts/
+    partialRootPaths.10 = EXT:welcome/Resources/Private/Partials/
+
+    variables {
+        content < styles.content.get
+    }
+}
+
+page.includeCSS.main = EXT:welcome/Resources/Public/Css/main.css
